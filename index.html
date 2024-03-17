@@ -5,20 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vikrant Kalyan</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
+        body{
+                margin: auto;
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+            }
+        header{
+            background-color: black;
+            height: 60px;
+            position: sticky;
         }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
+        footer{
+            background-color: black;
+            height: 30px;
+            font-size: 20px;
+            color:#fff;
             text-align: center;
+            position: sticky;
+            padding-top: 15px;
+            padding-bottom: 10px;
         }
-
+        #brand{
+            float: left;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 35px;
+            padding-top: 10px;
+            padding-left: 30px;
+        }
+        #social_link{
+            float: right;
+            margin-top: 10px;
+            margin-right: 30px;
+        }
+        .social_logo{
+            width:40px;
+        }
+        #head_area{
+            height:450px;
+            background-image: url('assets/images/banner_bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #profile{
+            height: 200px;
+            width: 200px;
+            background-color: transparent;
+            margin-left: 45%;
+            margin-top: 2%;
+            position: absolute;
+            font-size: 90px;
+        }
+        #about{
+            height: 150px;
+            width: 800px;
+            margin-top: 250px;
+            margin-left: 25%;
+            position: absolute;
+            font-size: 20px;
+            border-radius: 5px;
+            text-align: center;
+            color: #000;
+            text-align: justify;
+        }
         .section {
             padding: 20px;
             text-align: center;
@@ -27,80 +76,32 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .profile-image {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        .profile-info {
-            margin-top: 20px;
-        }
-
-        .profile-info h2 {
-            margin-bottom: 10px;
-        }
-
-        .profile-info p {
-            margin-bottom: 5px;
-        }
-
-        nav {
-            text-align: center;
-            background-color: #333;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Vikrant Kalyan</h1>
-    </header>
-
-    <nav>
-        <a href="#personal-info">Personal Info</a>
-        <a href="#about-me">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-    </nav>
-
-    <div id="personal-info" class="section">
-        <div class="profile-info">
-            <h2>Vikrant Kalyan</h2>
-            <p>Web Developer</p>
-            <p>Email: vikrant.kalyan23@gmail.com</p>
-            <p>Location: Chandigarh</p>
+        <div id="brand">
+            Vikrant Kalyan
         </div>
-    </div>
-
-    <div id="about-me" class="section">
-        <h2>About Me</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
-
+        <div id="social_link">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="assets/images/facebook.png" alt="facebook" class="social_logo">
+            </a>
+            <a href="https://www.skype.com/en/"  target="_blank"><img src="assets/images/skype.png" alt="skype" class="social_logo"></a>
+            <a href="https://in.linkedin.com/"  target="_blank">
+                <img src="assets/images/linkedin.webp" alt="linkedin" class="social_logo">
+            </a>
+        </div>
+    </header>
+    <section id="head_area">
+        <div id="profile">
+            <img src="assets/images/vikrant.png" alt="vikrant" >
+        </div>
+        <div id="about">
+            As a PHP developer, I am well-versed in server-side scripting and web development technologies such as HTML, CSS, JavaScript, and MySQL. I have experience in designing and developing responsive websites that are both user-friendly and optimized for search engines. I am a strong communicator and team player, with excellent problem-solving abilities.
+Overall, I am teacher at heart, Manager by brain, But programmer by profession. 
+        </div>
+    </section>
     <div id="skills" class="section">
         <h2>Skills</h2>
         <p>HTML, CSS, JavaScript, PHP, Codeigniter, AJAX, Mysql</p>
@@ -110,10 +111,10 @@
         <h2>Experience</h2>
         <p>8 years of experience in web development.</p>
     </div>
-
     <footer>
-        <p> &copy; 2024 Vikrant Kalyan</p>
+        <div>
+            &copy; 2024 All rights reserved | Designed by Vikrant Kalyan
+        </div>
     </footer>
-
 </body>
 </html>
